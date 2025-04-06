@@ -93,7 +93,7 @@ main {
 #parceiros h2 {
   position: relative;
   font-family: var(--fonte-grande);
-  font-size: 4.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   color: var(--color-white);
 }
@@ -237,7 +237,7 @@ main {
 
 #sobre h1 {
   font-family: var(--fonte-grande);
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   position: relative;
   color: var(--cor-destaque1);
@@ -260,7 +260,7 @@ main {
 
 #sobre h3 {
   font-family: var(--fonte-pequena);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   margin-top: 60px;
 }
@@ -275,7 +275,7 @@ main {
 
 #solucoes h2 {
   font-family: var(--fonte-grande);
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   position: relative;
   color: var(--cor-destaque1);
@@ -299,6 +299,7 @@ main {
 .subtitulo {
   font-family: "Lato", sans-serif;
   color: #555;
+  margin-top: 50px;
   margin-bottom: 40px;
   font-size: 1.1rem;
 }
