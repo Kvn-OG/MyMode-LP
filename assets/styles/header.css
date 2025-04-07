@@ -1,12 +1,3 @@
-:root {
-    --fonte-grande: 'Fredoka';
-    --fonte-pequena: 'Lato';
-    --cor-destaque1: #2E3192;
-    --cor-destaque2: #FFCE00;
-    --color-white: #ffff;
-    --color-black: #2B2B2B;
-}
-
 #logo-mymode {
     width: 200px;
     cursor: pointer;

@@ -1,9 +1,36 @@
 // Botão Menu Mobile
-$(document).ready(function() {
-    $('#btn_mobile').on('click', function(){
-        $('#mobile_menu').toggleClass('active');
-    });
-});
+document.addEventListener('DOMContentLoaded', function(){
+  const btnMobile = document.getElementById('btn_mobile');
+  const menuMobile = document.getElementById('mobile_menu');
+
+  btnMobile.addEventListener('click', ()=> {
+    menuMobile.classList.toggle('active');
+  });
+  // Animações com ScrollReveal
+  ScrollReveal().reveal('#solucoes', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1500,
+    easing: 'ease-in-out',
+    reset: false
+  });
+
+  ScrollReveal().reveal('.video-desktop', {
+    origin: 'left',
+    distance: '50px',
+    duration: 1500,
+    easing: 'ease-in-out',
+    reset: false
+  });
+
+  const sliderItems = document.getElementById('slider-items');
+  const logos = Array.from(sliderItems.children);
+
+  logos.forEach(logos =>{
+    const clone = logos.cloneNode(true);
+    sliderItems.appendChild(logos);
+  });
+})
 
 // Carrossel de Logos
 const carousel = document.getElementById('carouselSingle');
@@ -36,7 +63,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
       const targetID = this.getAttribute('href').substring(1);
       const targetElement = document.getElementById(targetID);
-      const offset = 80; // altura da sua navbar (ajuste se for diferente)
+      const offset = 80;
   
       if (targetElement) {
         const elementPosition = targetElement.offsetTop;
