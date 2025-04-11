@@ -458,6 +458,7 @@
 
   .video-mobile {
     display: block;
+    justify-content: center;
   }
 
   #title {
