@@ -45,6 +45,10 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+#button-vid-mobile{
+  display: none;
+}
+
 .video_wrapper {
   max-width: 560px;
   height: auto;
@@ -462,6 +466,11 @@
   .video-mobile {
     display: block;
     justify-content: center;
+  }
+
+  #button-vid-mobile{
+    display: block;
+    z-index: 3;
   }
 
   #title {
